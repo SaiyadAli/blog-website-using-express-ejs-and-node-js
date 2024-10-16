@@ -1,0 +1,15 @@
+<%- include('parsels/header') %>
+
+<h1>Compose</h1>
+<form action="/submit" method="post">
+    <div class="form-group">
+      <label for="TitleName">Title</label>
+      <input type="text" name="titleContent"class="form-control" id="TitleName"  placeholder="Enter Title"  required>
+    </div>
+    <div class="form-group">
+        <label for="PostName">Post</label>
+        <textarea class="form-control" id="PostName" name="postContent" rows="3" placeholder="Enter content" required></textarea>
+      </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+<%- include('parsels/footer') %>

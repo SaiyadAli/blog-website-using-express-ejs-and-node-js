@@ -1,0 +1,17 @@
+<%- include('parsels/header') %>
+
+<h1>Home</h1>
+<p><%=startingContent  %></p>
+<% if (locals.arr) { %>
+   <% for(let values of arr ) { %>
+      
+    <h1><%= values.title %></h1>
+    <p><%= values.content.substring(0,100)+" ..." %><a href="/posts/<%= values.title%>">Read more</a> </p>
+
+   <% } %>
+<% } %>
+
+
+
+
+<%- include('parsels/footer') %>
